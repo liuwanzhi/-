@@ -1,0 +1,31 @@
+函数 int()直接截去小数部分（返回为整数）
+函数floor()得到最接近原数但小于原数的正说（返回为浮点数）  floor(-1.8) == -2.0 floor(1.8) = 1
+函数round()得到最接近原数的整数(返回为浮点数) 四舍五入
+
+序列操作
+   seq[ind]
+   seq[ind1: inde2]
+   seq * expr : 序列重复expr次
+   seq1 + seq2 
+   obj in seq 或者 obj not in seq 判断obj元素是否包含在seq中
+   
+   eg s = 'abcde'
+     s[:-1] = 'abcd' s[:-3] = 'ab'
+     
+     
+  enumerate()
+    s = 'foobar'
+    for i, t in enumerate(s):
+      print i, t
+  0 f
+  1 o
+  ....
+  zip
+   s, t = 'foa','obr'
+    zip(s,t) //  [('f', '0'), ('o', 'b'), ('a', 'r')]
+
+列表操作
+  [i * 2 for i in [8, -2, 5]]  // [16, -4, 10]
+  [i for i in range(8) if i % 2 == 0] //[0, 2, 4,,6]
+  
+  sorted() reversed()
